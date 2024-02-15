@@ -1,0 +1,30 @@
+.categorys{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 92px;
+  /* padding-bottom: 50px; */
+}
+.categorys-in{
+    align-items: center;
+}
+.categorys-in h2{
+  margin-top: 37px;
+  margin-bottom: 24px;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+  align-items: center;
+
+}
+.categorys-in img{
+    align-items: center;
+}
+.categorys-in p{
+    color: #000000;
+    align-items: center;
+    font: 17px;
+    font-weight: 500;
+    margin-top: 24px;
+    /* margin-bottom: 40px; */
+}

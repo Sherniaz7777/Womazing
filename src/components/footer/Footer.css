@@ -1,0 +1,58 @@
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logotip-2{
+   align-items: center;
+   display: flex;
+   gap: 11px;
+}
+.categoryss{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+footer{
+    margin-top: 150px;
+    /* background-color: #F1EADC; */
+    margin-bottom: 50px;
+}
+.phonenomer{
+    margin-top: 20px;
+}
+.phonenomer h5{
+    margin-top: 9px;
+}
+
+.logos-2{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.sylka li{
+    list-style: none;
+    padding: 6px;
+
+}
+/* .Frame-22{
+    margin-left: 310px;
+} */
+.Frame-22 li{
+    list-style: none;
+    padding: 6px;
+    margin-left: -165px;
+}
+
+.insta{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+.mastercard{
+    margin-top: 30px;
+    margin-left: 40px;
+}

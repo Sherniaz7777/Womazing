@@ -1,0 +1,57 @@
+h1{
+    margin-top: 160px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+}
+button{
+    border: 1px solid #6E9C9F;
+    background: none;
+    width: 243px;
+    height: 68px;
+}
+.look{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.look img{
+    width: 350px;
+    height: 478px;
+}
+#btn-btn{
+ text-align: center;
+ margin-top: 40px;
+}
+
+
+.look-container {
+    display: flex;
+     /* Allows items to wrap to the next line if there's not enough space */
+    justify-content: space-between; /* Centers items horizontally */
+    margin-top: 100px;
+}
+
+
+
+.look img {
+    max-width: 100%;
+}
+
+.look h1 {
+    font-size: 18px;
+    margin-top: 17px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.look p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 7px;
+    color: #998E78;
+    font-size: 15px;
+    font-weight: 500;
+}
