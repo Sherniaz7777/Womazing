@@ -8,3 +8,139 @@
   margin: auto ;
   
 }
+.Detail{
+  display: flex;
+  gap: 74px;
+  margin-top: 102px;
+  margin-bottom: 130px;
+  align-items: center;
+}
+.detail-img img{
+  width: 486px;
+  height: 629px;
+}
+.detail-info h3{
+   font-weight: 500;
+   font-size: 40px;
+   color: #000000;
+}
+.detail-info p{
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #998E78;
+}
+.detail-btn{
+   display: flex;
+   margin-top: 70px;
+   gap: 20px;
+}
+.detail-btn-1{
+  width: 68px;
+  height: 68px;
+  border: 1px solid #AFAFAF;
+  background: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+.detail-btn-2{
+  width: 268px;
+  height: 68px;
+  background-color: #6E9C9F;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: Center;
+
+}
+.About-h1{
+  margin-top: 190px;
+  font-weight: 500;
+  font-size: 55px;
+  color: #000000;
+}
+.About-1{
+  margin-top: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 94px;
+}
+.About-text h3{
+  font-weight: 500;
+  font-size: 25px;
+  color: #000000;
+}
+.About-text li{
+  margin-top: 46px;
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+  font: 500;
+}
+.About-Btn{
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.About-Btn button{
+  width: 260px;
+  height: 68px;
+  background-color: #6E9C9F;
+  border: none;
+  font-size: 17px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.Shop-h1{
+  margin-top: 190px;
+  margin-bottom: 190px;
+  font-size: 55px;
+  color: #000000;
+  font-weight: 500;
+}
+.Shop-Btn{
+  display: flex;
+  gap: 10px;
+  
+}
+.Shop-Btn button{
+  padding: 19px 65px 19px 65px;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+  background: none;
+}
+.Shop-Btn button:hover{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.Shop-cards img{
+  width: 350px;
+  height: 478px;
+}
+.Shop-cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.Shop-cards h3{
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.Shop-cards p{
+  text-align: center;
+  margin-top: 7px;
+  color: #9C9C9C;
+  font-size: 15px;
+  font-weight: 500;
+}

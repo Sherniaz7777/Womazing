@@ -1,0 +1,81 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+}
+.header-anket h1{
+    font-weight: 500;
+    font-size: 55px;
+    width: 490px;
+    color: #000000;
+}
+.header-anket p{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: right;
+    line-height: 28px;
+    width: 350px;
+    padding-top: 45px;
+    color: #000000;
+    margin-left: -30px;
+}
+.header-anket button{
+    padding: 22px, 50px, 22px, 50px;
+}
+.header-anket-h6{
+    margin-top: 100px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 250px;
+    gap: 5px;
+    
+}
+#h6-3{
+    background-color: #6E9C9F;
+    width: 30px;
+    /* gap: 5px; */
+    height: 4px;
+}
+#h6-1{
+    background-color: #000000;
+    width: 30px;
+    /* gap: 5px; */
+    height: 4px; 
+}
+
+.btns{
+    align-items: center;
+    display: flex;
+    margin-top: 52px;
+    margin-left: 53px;
+    
+}
+#img-btn{
+    width: 67px;
+    height: 67px;
+    border: none;
+}
+#ot-btn{
+    width: 200px;
+    height: 68px;
+    border: none;
+    background-color: #6E9C9F;
+    text-align: center;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+#phototre{
+    position: absolute;
+    padding-top: 390px;
+    margin-left: -130px;
+}
+#photovtor{
+    position: absolute;
+    padding-top: 120px;
+    margin-left: -90px;
+}

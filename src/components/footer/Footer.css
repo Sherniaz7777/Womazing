@@ -14,9 +14,11 @@
     gap: 45px;
 }
 footer{
-    margin-top: 150px;
-    /* background-color: #F1EADC; */
-    margin-bottom: 50px;
+    padding-top: 104px;
+    background-color: #F1EADC;
+    padding-bottom: 97px;
+    margin-top: 30px;
+
 }
 .phonenomer{
     margin-top: 20px;
