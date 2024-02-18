@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Section1.css";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const url = "https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name";
 
@@ -18,7 +18,7 @@ const Section1 = () => {
   }, []);
 
   if (look == null) {
-    return <h1 style={{textAlign:"center"}}>Loading</h1>
+    return <h1 style={{ textAlign: "center" }}>Loading</h1>;
   }
 
   return (
@@ -39,7 +39,9 @@ const Section1 = () => {
           ))}
         </div>
         <p id="btn-btn">
-          <button>Открыть магазин</button>
+          <NavLink className="NavLink" to="/shop">
+            <button>Открыть магазин</button>
+          </NavLink>
         </p>
       </div>
     </div>

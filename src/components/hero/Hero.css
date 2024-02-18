@@ -59,16 +59,27 @@
     height: 67px;
     border: none;
 }
+
 #ot-btn{
     width: 200px;
     height: 68px;
-    border: none;
-    background-color: #6E9C9F;
+    border: 1px solid #6E9C9F;
+    
+    background: none;
     text-align: center;
     font-size: 17px;
-    color: #FFFFFF;
+    color: #000000;
     font-weight: 400;
 }
+#ot-btn:hover{
+    background-color: #6E9C9F;
+    color: #FFFFFF;
+}
+#ot-btn:active{
+    background-color: #6E9C9F;
+    color: #FFFFFF;
+}
+
 #phototre{
     position: absolute;
     padding-top: 390px;

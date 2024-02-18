@@ -3,7 +3,8 @@ import vector from "../../assets/Vector 1.png";
 import photoglav from "../../assets/Фото главное.png";
 import photovtor from "../../assets/Фото вторичное.png";
 import phototre from "../../assets/Фото третьестепенное.png";
-import "./Hero.css"
+import "./Hero.css";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,7 +22,9 @@ const Hero = () => {
                 <button id="img-btn">
                   <img src={vector} alt="" />
                 </button>
-                <button id="ot-btn">Открыть магазин</button>
+                <NavLink className="NavLink" to="/shop">
+                  <button id="ot-btn">Открыть магазин</button>
+                </NavLink>
               </div>
 
               <div className="header-anket-h6">
