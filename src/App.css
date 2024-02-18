@@ -144,3 +144,144 @@
   font-size: 15px;
   font-weight: 500;
 }
+.shop-main{
+  display: flex;
+  align-items: center;
+  gap: 444px;
+  margin-bottom: 26px;
+}
+.tovar-price{
+  display: flex;
+  align-items: center;
+  gap: 167px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.tovar{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.shop-basket{
+  display: flex;
+  align-items: center;
+  margin-top: 49px;
+  /* width: 989px; */
+  height: 205px;
+}
+.basket-title{
+  display: flex;
+  align-items: center;
+  width: 345px;
+}
+.shop-basket img{
+    width: 136px;
+    height: 205px;
+    
+}
+#cart-btn{
+   padding-right: 20px;
+   background: none;
+   border: none;
+}
+#cart-btn img{
+  width: 12px;
+  height: 12px;
+}
+.shop-basket h4{
+  margin-left: 24px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+}
+.shop-basket p{
+  margin-left: 150px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+}
+#cart-btn-counter{
+  margin-left: 180px;
+  /* background-color: #AFAFAF; */
+  background: none;
+  border: 1px solid #AFAFAF;
+}
+#cart-btn-counter{
+  width: 47px;
+  height: 47px;
+}
+/* 47px */
+.shop-basket span{
+  margin-left: 215px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+}
+.control-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+.control-btn-1{
+  gap: 16px;
+  display: flex;
+}
+.control-btn-1 button{
+  padding: 22px 50px 22px 50px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #6E9C9F;
+  background: none;
+  border: 1px solid #6E9C9F;
+}
+.control-btn-2 button{
+  padding: 22px 50px 22px 50px;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: #6E9C9F;
+  background: none;
+  border: 1px solid #6E9C9F; 
+}
+#total-basket-btn{
+  padding: 22px 50px 22px 50px;
+  background-color: #6E9C9F;
+  border: none;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 400;
+}
+.Total-cart{
+  margin-top: 88px;
+  margin-bottom: 130px;
+  margin-left: 570px;
+}
+.Total-cart p{
+    color: #000000;
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+.Total-cardss{
+  margin-top: 28px;
+  display: flex;
+  gap: 15px;
+}
+.total-basket{
+  width: 287px;
+  background-color: #F1EADC;
+  height: 68px;
+  padding: 16px 31px 17px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-basket h3{
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+}

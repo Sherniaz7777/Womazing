@@ -23,6 +23,14 @@ h1{
  text-align: center;
  margin-top: 40px;
 }
+#btn-btn button:hover{
+    background-color: #6E9C9F;
+    color: #FFFFFF;
+}
+#btn-btn button:active{
+    background-color: #6E9C9F;
+    color: #FFFFFF;
+}
 
 
 .look-container {

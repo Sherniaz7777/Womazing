@@ -16,7 +16,7 @@ const Shop = () => {
   }, []);
 
   if (shoppro == null) {
-    return <h1>Loading</h1>;
+    return <h1 style={{ textAlign: "center", }}>Loading</h1>;
   }
   return (
     <div className="Container">

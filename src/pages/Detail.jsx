@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 const Detail = () => {
   const paramas = useParams();
   const [products, setProducts] = useState(null);
+  const [count, setCount] = useState(0);
 
   async function getProduc() {
     const { data } = await axios.get(
@@ -32,7 +33,7 @@ const Detail = () => {
             <h3>{products.name}</h3>
             <p>{products.price}</p>
             <div className="detail-btn">
-              <button className="detail-btn-1">1</button>
+              <button onClick={() => setCount(count + 1)} className="detail-btn-1" >{count}</button>
               <button className="detail-btn-2">Добавить в корзину</button>
             </div>
           </div>
