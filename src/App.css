@@ -285,3 +285,104 @@
   font-weight: 500;
   color: #000000;
 }
+.control-btn-1 input{
+  border: none;
+  border-bottom: 2px solid silver;
+  width: 255px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #868686;
+  padding-left: 5px;
+  outline: none;
+}
+.Karta{
+  width: 1109px;
+  height: 476px;
+  background: #DDDDDD;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+  
+}
+.Karta p{
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+}
+.map-contact{
+  display: flex;
+  align-items: center;
+  gap: 111px;
+  padding: 40px 0px;
+  
+}
+.map-contact p{
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+}
+.map-contact h5{
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  padding-top: 19px;
+}
+.inputs-contact h1{
+  font-size: 25px;
+  color: #000000;
+  font-weight: 500;
+  padding: 0px 0px 64px 0px;
+}
+.inputs-contact button{
+  padding: 22px 50px 22px 50px;
+  background-color: #6E9C9F;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 400;
+  border: none;
+  margin-top: 35px;
+}
+.inputs-contact input{
+  width: 350px;
+  height: 40px;
+  /* padding: 10px 0px; */
+  outline: none;
+  border: none;
+  border-bottom: 1px  solid #000000;
+}
+#inputs-contact-input3{
+  margin-top: 10px;
+
+}
+#inputs-contact-input2{
+  margin-top: 10px;
+
+}
+#inputs-contact-input{
+  margin-top: 10px;
+}
+.inputs-contact textarea{
+  margin-top: 16px;
+  color: #868686;
+  font-size: 17px;
+  font-weight: 500;
+  width: 443px;
+  height: 134px;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid #000000;
+  
+}
+.sobshenia{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #F1EADC;
+  width: 437px;
+  padding: 30px 0px;
+  margin-top: 62px;
+  margin-bottom: 100px;
+}
