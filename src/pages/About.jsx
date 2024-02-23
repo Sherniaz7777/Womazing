@@ -1,6 +1,7 @@
 import React from "react";
 import AbouImg1 from "../assets/Frame 34.png";
 import AboutImg2 from "../assets/Frame 34 (1).png";
+import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
@@ -51,7 +52,10 @@ const About = () => {
           <img src={AboutImg2} alt="" />
         </div>
       </div>
+      <NavLink to={'/shop'}>
+
       <p className="About-Btn"><button>Перейти в магазин</button></p>
+      </NavLink>
     </div>
   );
 };

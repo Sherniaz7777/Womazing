@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const Detail = () => {
+const Detail = ({addCard}) => {
   const paramas = useParams();
   const [products, setProducts] = useState(null);
   const [count, setCount] = useState(0);
@@ -15,6 +15,7 @@ const Detail = () => {
     console.log(data);
   }
 
+ 
   useEffect(() => {
     getProduc();
   }, []);
@@ -34,7 +35,8 @@ const Detail = () => {
             <p>{products.price}</p>
             <div className="detail-btn">
               <button onClick={() => setCount(count + 1)} className="detail-btn-1" >{count}</button>
-              <button className="detail-btn-2">Добавить в корзину</button>
+              
+              <button  className="detail-btn-2" onClick={()=>addCard(products.id)}>Добавить в корзину</button>
             </div>
           </div>
         </div>
