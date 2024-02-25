@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
-// import Section1 from './components/section1/Section1'
-// import Section2 from './components/section2/Section2'
-// import Section3 from './components/section3/Section3'
+
 import Footer from "./components/footer/Footer";
 
 import Home from "./pages/Home";
@@ -12,50 +10,64 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Cart from "./pages/Cart";
 import Detail from "./pages/Detail";
-import { Route, Routes } from "react-router-dom";
-import axios from "axios";
+import { Route, Router, Routes, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import "./i18n/i18n"
+import i18next from "./i18n/i18n";
 
-const App = () => {
+import Checkout from "./pages/Checkout";
+import Success from "./pages/Success";
 
-  
-  
-let  Cards =[]
-
-async function addCard(id) {
-  const { data } = await axios.get(`https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name/${id}`);
-   JSON.parse(localStorage.getItem('cards')) || [];
-
-
-  const existingCard = Cards.find(card => card.id === data.id);
-
-  if (!existingCard) {
-
-      Cards.push(data);
 
 
 
-      localStorage.setItem('cards', JSON.stringify(Cards));
+const App = () => {
+  const {t, i18n} = useTranslation()
+  const [cartItems, setCartItems] = useState([]);
+  const [active, setActive]=useState("ru")
+  const navigate = useNavigate()
+
+  const back = ()=>{
+    navigate(-1)
   }
 
-  console.log(Cards); 
-}
+  function ChangeLng(Lange) {
+     const Langes=Lange.toLowerCase()
+     i18n.changeLanguage(Langes)
+     setActive(Langes)
+  }
 
+  const addToCart = (product) => {
+    const existingCard = cartItems.find((card) => card.id === product.id);
 
+    if (!existingCard) {
+      setCartItems([...cartItems, product]);
+    }
+  };
+
+  const deleteItem = (id) => {
+    setCartItems(cartItems.filter((item) => item.id !== id));
+  };
+
+  
 
   return (
     <div>
-      <Header />
+      <Header cartItems={cartItems.length} t={t} ChangeLng={ChangeLng} active={active}/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />}></Route>
-        <Route path="/about" element={<About />} />
-        <Route path="/contacts" element={<Contacts />}></Route>
-        <Route path="/cart" element={<Cart CardBasket={Cards}/>}></Route>
-        <Route path="/detail/:ProducId" element={<Detail addCard={addCard}/>}></Route>
+        <Route path="/" element={<Home t={t}/>} />
+        <Route path="/shop" element={<Shop t={t} back={back}/>}></Route>
+        <Route path="/about" element={<About t={t} back={back}/>} />
+        <Route path="/contacts" element={<Contacts t={t} back={back}/>}></Route>
+        <Route path="/cart" element={<Cart CardBasket={cartItems} deleteItem={deleteItem}setCartItems={setCartItems} t={t} back={back}/>}></Route>
+        <Route path="/detail/:ProducId" element={<Detail addToCart={addToCart} t={t} back={back}/>}></Route>
+        <Route path="/checkout" element={<Checkout t={t} back={back}/>}></Route>
+        <Route path="/success" element={<Success t={t} back={back}/>}/>
       </Routes>
-      <Footer />
+      <Footer t={t}/>
     </div>
   );
 };
 
 export default App;
+

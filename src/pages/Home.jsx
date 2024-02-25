@@ -4,13 +4,13 @@ import Section2 from './../components/section2/Section2';
 import Section3 from './../components/section3/Section3';
 import Hero from '../components/hero/Hero';
 
-const Home = () => {
+const Home = ({t}) => {
   return (
     <div>
-      <Hero/>
-      <Section1/>
-      <Section2/>
-      <Section3/>
+      <Hero t={t}/>
+      <Section1 t={t}/>
+      <Section2 t={t}/>
+      <Section3 t={t}/>
     </div>
   )
 }

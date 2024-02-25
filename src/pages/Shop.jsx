@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const url = "https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name";
-const Shop = () => {
+const Shop = ({t, back}) => {
   const [shoppro, setShop] = useState(null);
 
   async function getShop() {
@@ -20,14 +20,15 @@ const Shop = () => {
   }
   return (
     <div className="Container">
-      <h1 className="Shop-h1">Магазин</h1>
+      <button className="back-btn" onClick={back}><img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="back" /></button>
+      <h1 className="Shop-h1">{t("Магазин")}</h1>
 
       <div className="Shop-Btn">
-        <button>Все</button>
-        <button>Пальто</button>
-        <button>Свитшоты</button>
-        <button>Кардиганы</button>
-        <button>Толстовки</button>
+        <button>{t("Все")}</button>
+        <button>{t("Пальто")}</button>
+        <button>{t("Свитшоты")}</button>
+        <button>{t("Кардиганы")}</button>
+        <button>{t("Толстовки")}</button>
       </div>
 
       <div className="Shop-cards">
@@ -36,7 +37,7 @@ const Shop = () => {
             <div className="shop-cards-in">
               <img src={el.img} alt="" />
               <h3>{el.name}</h3>
-              <p>{el.price}</p>
+              <p>{el.price}$</p>
             </div>
           </NavLink>
         ))}

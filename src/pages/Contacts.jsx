@@ -1,12 +1,13 @@
 import React from "react";
 
-const Contacts = () => {
+const Contacts = ({t, back}) => {
   return (
     <div>
       <div className="Container">
-        <h1 className="Shop-h1">Контакты</h1>
+      <button className="back-btn" onClick={back}><img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="back" /></button>
+        <h1 className="Shop-h1">{t("Контакты")}</h1>
         <div className="Karta">
-          <p>Карта с любой точкой</p>
+          <p>{t("Карта с любой точкой")}</p>
         </div>
 
         <div className="map-contact">
@@ -20,27 +21,27 @@ const Contacts = () => {
           </div>
           <div>
             <p>Адрес</p>
-            <h5>г. Москва, 3-я улица Строителей, 25</h5>
+            <h5>{t("г. Москва, 3-я улица Строителей, 25")}</h5>
           </div>
         </div>
 
         <div className="inputs-contact">
-          <h1>Напишите нам</h1>
+          <h1>{t("Напишите нам")}</h1>
           <div className="inputs-contact-in">
 
-          <input id='inputs-contact-input' type="text" placeholder="Имя"/>
+          <input id='inputs-contact-input' type="text" placeholder={t("Имя")}/>
           <br />
           <input id="inputs-contact-input2" type="email" placeholder="E-mail"/>
           <br />
           <input id="inputs-contact-input3" type="text" placeholder="Телефон"/>
           <br />
-          <textarea  id="" placeholder="Сообщение"></textarea>
+          <textarea  id="" placeholder={t("Сообщение")}></textarea>
           <br />
           </div>
-          <button>Отправить</button>
+          <button>{t("Отправить")}</button>
         </div>
         <div className="sobshenia">
-          <p>Сообщение успешно отправлено</p>
+          <p>{t("Сообщение успешно отправлено")}</p>
         </div>
       </div>
     </div>

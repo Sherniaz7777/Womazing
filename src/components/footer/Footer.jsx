@@ -6,7 +6,7 @@ import facebook from "../../assets/facebook (1) 1.png";
 import Twiter from "../../assets/Group.png";
 import visa from "../../assets/visa-mastercard 1.png";
 
-const Footer = () => {
+const Footer = ({t}) => {
   return (
     <footer>
       <div className="Container">
@@ -17,9 +17,9 @@ const Footer = () => {
               <p>Womazing</p>
             </div>
             <div className="categoryss">
-              <span>Главная</span>
-              <p>Магазин</p>
-              <p>О бренде</p>
+              <span>{t("Главная")}</span>
+              <p>{t("Магазин")}</p>
+              <p>{t("О бренде")}</p>
               <p>Контакты</p>
             </div>
             <div className="phonenomer">
@@ -29,16 +29,16 @@ const Footer = () => {
           </div>
           <div className="logos-2">
             <div className="sylka">
-              <li>© Все права защищены</li>
-              <li>Политика конфиденциальности</li>
-              <li>Публичная оферта</li>
+              <li>{t("© Все права защищены")}</li>
+              <li>{t("Политика конфиденциальности")}</li>
+              <li>{t("Публичная оферта")}</li>
             </div>
 
             <div className="Frame-22">
-              <li>Пальто</li>
-              <li>Свитшоты</li>
-              <li>Кардиганы</li>
-              <li>Толстовки</li>
+              <li>{t("Пальто")}</li>
+              <li>{t("Свитшоты")}</li>
+              <li>{t("Кардиганы")}</li>
+              <li>{t("Толстовки")}</li>
             </div>
 
             <div className="social-network">
