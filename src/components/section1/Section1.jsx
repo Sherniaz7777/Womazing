@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const url = "https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name";
 
-const Section1 = () => {
+const Section1 = ({t}) => {
   const [look, setLook] = useState(null);
 
   async function getLook() {
@@ -18,13 +18,13 @@ const Section1 = () => {
   }, []);
 
   if (look == null) {
-    return <h1 style={{ textAlign: "center" }}>Loading</h1>;
+    return <h1 style={{ textAlign: "center" }}>{t("Loading")}</h1>;
   }
 
   return (
     <div>
       <div className="Container">
-        <h1>Новая коллекция</h1>
+        <h1>{t("Новая коллекция")}</h1>
         <div className="look-container">
           {look.map((el) => (
             <NavLink className="NavLink" to={`/detail/${el.id}`} key={el.id}>
@@ -32,7 +32,7 @@ const Section1 = () => {
                 <div>
                   <img src={el.img} alt={el.name} />
                   <h1>{el.name}</h1>
-                  <p>{el.price}</p>
+                  <p>{el.price}$</p>
                 </div>
               </div>
             </NavLink>
@@ -40,7 +40,7 @@ const Section1 = () => {
         </div>
         <p id="btn-btn">
           <NavLink className="NavLink" to="/shop">
-            <button>Открыть магазин</button>
+            <button>{t("Открыть магазин")}</button>
           </NavLink>
         </p>
       </div>

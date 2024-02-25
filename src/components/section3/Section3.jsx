@@ -3,12 +3,13 @@ import "./Section3.css";
 import adam from "../../assets/winger.png";
 import right from "../../assets/Vector 2.png";
 import left from "../../assets/Vector 1 (2).png";
+import { NavLink } from "react-router-dom";
 
-const Section3 = () => {
+const Section3 = ({t}) => {
   return (
     <div>
       <div className="Container">
-        <h1>Команда мечты Womazing</h1>
+        <h1>{t("Команда мечты Womazing")}</h1>
 
         <div className="Frame">
           <button id="btn-1">
@@ -23,18 +24,19 @@ const Section3 = () => {
           </button>
 
           <div className="Frame-text">
-            <h2>Для каждой</h2>
+            <h2>{t("Для каждой")}</h2>
 
             <p className="Frame-text-in">
-              Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.
+            {t("Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.")}
+              
             </p>
 
             <p className="Frame-text-in-2">
-              Womazing ищет эти мелочи и создает прекрасные вещи, которые
-              выгодно подчеркивают достоинства каждой девушки.
+            {t("Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.")}
+              
             </p>
 
-            <span>Подробнее о бренде</span>
+            <NavLink className="NavLinkspan" to='/about'><span>{t("Подробнее о бренде")}</span></NavLink>
           </div>
         </div>
       </div>

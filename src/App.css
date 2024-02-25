@@ -386,3 +386,204 @@
   margin-top: 62px;
   margin-bottom: 100px;
 }
+.Count-Btn{
+  display: flex;
+  align-items: center;
+}
+.Checkout-h1{
+  font-weight: 500;
+  color: #000000;
+  font-size: 55px;
+  padding: 140px 3px 230px 90px;
+}
+.Checkout{
+  display: flex;
+  gap: 313px;
+  padding-bottom: 130px;
+}
+.Checkout-input h2{
+     font-weight: 500;
+     font-size: 25px;
+     color: #000000;
+     padding: 0px 0px 47px 0px;
+}
+.Checkout-input input{
+  margin: 0px 0px 27px 0px;
+  outline: none;
+  border: none;
+  width: 350px;
+  height: 40px;
+  color: #868686;
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: 2px solid #000000;
+}
+.Checkout-input-2 h2{
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 81px 0px 47px 0px;
+}
+.Checkout-input-2 input{
+    margin: 0px 0px 27px 0px;
+    outline: none;
+    border: none;
+    width: 350px;
+    height: 40px;
+    color: #868686;
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 2px solid #000000;
+}
+.Checkout-Comment h2{
+  padding: 81px 0px 47px 0px;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+
+}
+.Checkout-Comment textarea{
+  color: #868686;
+  font-size: 17px;
+  font-weight: 500;
+  width: 350px;
+  height: 134px;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+.Checkout-order-in{
+  display: flex;
+  gap: 73px;
+}
+.Checkout-order-in-h3{
+  font-weight: 900;
+  color: #000000;
+  font-size: 25px;
+}
+.Checkout-order-in-1 h3{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 30px 0px 0px 0px ;
+}
+.Checkout-order-in-2 h3{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 30px 0px 0px 0px ;
+}
+.Checkout-Frame{
+  width: 284px;
+  height: 57px;
+  background-color: #F1EADC;
+  display: flex;
+  align-items: center;
+  margin-left: -15px;
+  gap: 125px;
+  margin-top: 20px;
+
+}
+.Checkout-Frame h2{
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  padding: 10px 15px 10px 15px;
+  
+}
+.Checkout-order-2{
+  margin-top: 150px;
+}
+.Checkout-order-2 h2{
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  padding-bottom: 47px;
+}
+.Checkout-order-2 p{
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding-bottom: 47px;
+}
+.Checkout-order-2 p img{
+  width: 22px;
+  height: 22px;
+}
+.Checkout-order-2 button{
+  padding: 22px 50px 22px 50px;
+  background: none;
+  color: #000000;
+  border: 1px solid #6E9C9F;
+  font-size: 17px;
+  font-weight: 400;
+
+}
+.Checkout-order-2 button:hover{
+  background-color: #6E9C9F;
+  color: #FFFFFF;
+}
+.Checkout-order-2 button:active{
+  background-color: #6E9C9F;
+  color: #FFFFFF;
+}
+.Main-content{
+  display: flex;
+  align-items: center;
+  gap: 350px;
+  padding-bottom: 130px;
+
+}
+.Main-content-img{
+  display: flex;
+  /* align-items: center; */
+  gap: 32px;
+}
+.Main-content-text{
+   padding: 10px 0px 9px 0px;
+   
+}
+.Main-content-text h3{
+   color: #000000;
+   font-size: 25px;
+   font-weight: 500;
+}
+.Main-content-text p{
+  padding-top: 17px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500;
+}
+.Main-content-btn button{
+  padding: 22px 50px 22px 50px;
+  color: #6E9C9F;
+  font-size: 17px;
+  font-weight: 400;
+  background: none;
+  border: solid 1px #6E9C9F;
+}
+.Main-content-btn button:hover{
+  background-color: #6E9C9F;
+  color: #FFFFFF;
+
+}
+.Main-content-btn button:active{
+  background-color: #6E9C9F;
+  color: #FFFFFF;
+}
+.back-btn {
+  width: 40px;
+  height: 20px;
+  margin-top: 60px;
+  background: none;
+  border: none;
+
+}
+.back-btn  img{
+  width: 50px;
+  background: none;
+}

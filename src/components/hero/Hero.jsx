@@ -6,24 +6,24 @@ import phototre from "../../assets/Фото третьестепенное.png";
 import "./Hero.css";
 import { NavLink } from "react-router-dom";
 
-const Hero = () => {
+const Hero = ({t}) => {
   return (
     <div>
       <div>
         <div className="Container">
           <div className="header">
             <div className="header-anket">
-              <h1>Новые поступления в этом сезоне</h1>
-              <p>
-                Утонченные сочетания и бархатные оттенки - вот то, что вы искали
-                в этом сезоне. Время исследовать.
+              
+              <h1>{t("Новые поступления в этом сезоне")}</h1>
+              <p>{t("Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.")}
+                
               </p>
               <div className="btns">
                 <button id="img-btn">
                   <img src={vector} alt="" />
                 </button>
                 <NavLink className="NavLink" to="/shop">
-                  <button id="ot-btn">Открыть магазин</button>
+                  <button id="ot-btn">{t("Открыть магазин")}</button>
                 </NavLink>
               </div>
 
