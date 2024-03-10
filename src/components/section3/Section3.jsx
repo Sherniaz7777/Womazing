@@ -12,14 +12,14 @@ const Section3 = ({t}) => {
         <h1>{t("Команда мечты Womazing")}</h1>
 
         <div className="Frame">
-          <button id="btn-1">
+          <button id="btn-1" className="btn-1-2">
             <img src={left} alt="" />
           </button>
           <img id="imgs" src={adam} alt="" />
           <a href=""></a>
           <a href=""></a>
           <a href=""></a>
-          <button>
+          <button className="btn-1-2">
             <img src={right} alt="" />
           </button>
 

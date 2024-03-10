@@ -1,23 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import {  getShops } from "../redux/slice/shopSlice";
 
-const url = "https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name";
+
 const Shop = ({t, back}) => {
-  const [shoppro, setShop] = useState(null);
 
-  async function getShop() {
-    const { data } = await axios.get(url);
-    console.log(data);
-    setShop(data);
-  }
-  useEffect(() => {
-    getShop();
-  }, []);
+  const {products, Loading, err} = useSelector((state)=>state.shops)
 
-  if (shoppro == null) {
-    return <h1 style={{ textAlign: "center", }}>Loading</h1>;
-  }
+  const dispatch=useDispatch()
+
+  console.log(products);
+  useEffect(()=>{
+      dispatch(getShops())
+  },[])
+
   return (
     <div className="Container">
       <button className="back-btn" onClick={back}><img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="back" /></button>
@@ -32,7 +30,7 @@ const Shop = ({t, back}) => {
       </div>
 
       <div className="Shop-cards">
-        {shoppro.map((el) => (
+        {products.map((el) => (
           <NavLink className="NavLink" to={`/detail/${el.id}`} key={el.id}>
             <div className="shop-cards-in">
               <img src={el.img} alt="" />

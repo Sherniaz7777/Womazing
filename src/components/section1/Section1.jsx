@@ -1,32 +1,28 @@
 import React, { useEffect, useState } from "react";
 import "./Section1.css";
 import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getShops } from "../../redux/slice/shopSlice";
 
-const url = "https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name";
+
 
 const Section1 = ({t}) => {
-  const [look, setLook] = useState(null);
+  const {products, Loading, err} = useSelector((state)=>state.shops)
 
-  async function getLook() {
-    const res = await fetch(url);
-    const data = await res.json();
-    setLook(data);
-  }
+  const dispatch=useDispatch()
 
-  useEffect(() => {
-    getLook();
-  }, []);
-
-  if (look == null) {
-    return <h1 style={{ textAlign: "center" }}>{t("Loading")}</h1>;
-  }
+  console.log(products);
+  useEffect(()=>{
+      dispatch(getShops())
+  },[])
+  console.log(products);
 
   return (
     <div>
       <div className="Container">
         <h1>{t("Новая коллекция")}</h1>
         <div className="look-container">
-          {look.map((el) => (
+          {products.map((el) => (
             <NavLink className="NavLink" to={`/detail/${el.id}`} key={el.id}>
               <div className="look" key={el.id}>
                 <div>
